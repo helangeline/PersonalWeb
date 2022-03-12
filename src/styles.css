@@ -1,0 +1,25 @@
+:root {
+  --blue: #193549;
+  --blue-highlight: #1f4662;
+  --blue-highlight2: #234e6d;
+  --blue-dark: #122738;
+
+  --yellow: #ffc600;
+
+  --hot-pink: #ff0088;
+  --blush-pink: #ff628c;
+
+  --orange: #ff9d00;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+  min-height: 100vh;
+  background: var(--blue);
+}
