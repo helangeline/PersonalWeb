@@ -1,16 +1,26 @@
-import imgLinkedIn from "../assets/Home/linked-in.svg";
-
-const LINKEDIN_URL = "https://id.linkedin.com/in/angeline-budinata-478ba412a";
+import { SOCIAL_MEDIA } from "../constants/Home";
 
 export default function Home() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Angeline Budinata</h1>
+      <h1 className="text-3xl md:text-6xl font-bold underline">
+        Angeline Budinata
+      </h1>
       <div>I like to code (lol.)</div>
       <br />
-      <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
-        <img src={imgLinkedIn} alt="Linked In" />
-      </a>
+      <div className="flex">
+        {SOCIAL_MEDIA.map(({ url, icon, name }) => (
+          <a
+            className="px-1"
+            key={name}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={icon} alt={name} />
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
