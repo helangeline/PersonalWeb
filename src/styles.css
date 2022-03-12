@@ -12,8 +12,12 @@
   --orange: #ff9d00;
 }
 
+body {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+}
+
 .App {
-  font-family: sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -22,4 +26,12 @@
   min-width: 100vh;
   min-height: 100vh;
   background: var(--blue);
+}
+
+.App > h1 {
+  color: var(--orange);
+}
+
+.App > div {
+  color: var(--yellow);
 }
