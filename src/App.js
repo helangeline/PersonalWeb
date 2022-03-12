@@ -1,10 +1,15 @@
-import "./styles.css";
+import { BrowserRouter as Routes, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
+import "./styles/tailwind-pre-build.css";
+import "./styles/styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Angeline Budinata</h1>
-      <div>I like to code (lol.)</div>
-    </div>
+    <Routes>
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+    </Routes>
   );
 }
