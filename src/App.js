@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 
 import "./styles/tailwind-pre-build.css";
 import "./styles/styles.css";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
-      {/* TODO: Footer */}
+      <Footer />
     </Routes>
   );
 }
